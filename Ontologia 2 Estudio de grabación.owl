@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ivanornelas/ontologies/2020/3/untitled-ontology-6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ivanornelas/ontologies/2020/3/untitled-ontology-6">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Accion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Actor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animacion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Director"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Emisora"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Escritor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Estudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fotografo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Genero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gente"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Musica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Musico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Produccion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Productor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Publicista"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Serie"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Emite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Es_de_genero"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Es_emitida_en"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Es_producida_por"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Produce"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Trabaja_en"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Crasificacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Fin_emision"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Genero_usual"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Inicio_emision"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Nombre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Rango_edad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Ubicacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#anio_inicio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Estudio_33"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Accion"/>
+        <Class IRI="#Director"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actor"/>
+        <Class IRI="#Gente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Animacion"/>
+        <Class IRI="#Estudio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Arte"/>
+        <Class IRI="#Director"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Director"/>
+        <Class IRI="#Gente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Escritor"/>
+        <Class IRI="#Gente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fotografo"/>
+        <Class IRI="#Gente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Musica"/>
+        <Class IRI="#Estudio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Musico"/>
+        <Class IRI="#Gente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Produccion"/>
+        <Class IRI="#Estudio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Productor"/>
+        <Class IRI="#Gente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Publicista"/>
+        <Class IRI="#Gente"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Estudio"/>
+        <NamedIndividual IRI="#Estudio_33"/>
+    </ClassAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Emite"/>
+        <ObjectProperty IRI="#Es_emitida_en"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Es_producida_por"/>
+        <ObjectProperty IRI="#Produce"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Emite"/>
+        <Class IRI="#Emisora"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Es_de_genero"/>
+        <Class IRI="#Serie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Es_emitida_en"/>
+        <Class IRI="#Serie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Es_producida_por"/>
+        <Class IRI="#Serie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Produce"/>
+        <Class IRI="#Estudio"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Trabaja_en"/>
+        <Class IRI="#Serie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Emite"/>
+        <Class IRI="#Serie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Es_de_genero"/>
+        <Class IRI="#Genero"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Es_emitida_en"/>
+        <Class IRI="#Emisora"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Es_producida_por"/>
+        <Class IRI="#Estudio"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Produce"/>
+        <Class IRI="#Serie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Trabaja_en"/>
+        <Class IRI="#Genero"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Crasificacion"/>
+        <Class IRI="#Serie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Fin_emision"/>
+        <Class IRI="#Serie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Genero_usual"/>
+        <Class IRI="#Serie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Inicio_emision"/>
+        <Class IRI="#Serie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre"/>
+        <Class IRI="#Emisora"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre"/>
+        <Class IRI="#Estudio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre"/>
+        <Class IRI="#Genero"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre"/>
+        <Class IRI="#Gente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre"/>
+        <Class IRI="#Serie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Rango_edad"/>
+        <Class IRI="#Genero"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Rango_edad"/>
+        <Class IRI="#Serie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Ubicacion"/>
+        <Class IRI="#Estudio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#anio_inicio"/>
+        <Class IRI="#Serie"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Crasificacion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Fin_emision"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Genero_usual"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Inicio_emision"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Nombre"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Rango_edad"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Ubicacion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#anio_inicio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
